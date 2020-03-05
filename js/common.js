@@ -1,6 +1,5 @@
-
-    // html dom 이 다 로딩된 후 실행된다.
-    $(document).ready(function(){
+//2단 메뉴 함수
+$(document).ready(function(){
         // memu 클래스 바로 하위에 있는 a 태그를 클릭했을때
         $(".menu>a").click(function(){
             // 현재 클릭한 태그가 a 이기 때문에
@@ -8,7 +7,6 @@
             $(this).next("ul").toggleClass("hide");
         });
     });
-
 
 
 

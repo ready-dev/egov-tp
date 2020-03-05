@@ -1,0 +1,88 @@
+/* 공통 */    
+body {
+    font-family: "KoPub Dotum", sans-serif !important;
+  }
+      
+  /* 헤더 */    
+  .de-top-manu {
+      height: 50px;
+      width: 100%;
+      background: #EFF1F2;
+      padding: 15px 130px 15px 10px;
+      font-size: 18px;
+      color: #56575b;
+  }
+  .de-top-navi {
+      height: 95px;
+      width: 100%;
+      background: #ffffff;
+      padding: 15px 130px 15px 0px;
+      font-size: 18px;
+      color: #56575b;
+  }
+  .de-top-popup {
+  text-align: center;
+  }
+  
+  ul.de-top-navibar > li {
+  margin: 0 0 0 0;
+  padding: 0 5px 0 5px;
+  border : 0;
+  float: left;
+  }
+  
+  ul.de-top-navibar {
+  float: right;
+  list-style: none;
+  }
+      
+  ul.de-second-navibar > li {
+      margin: 0 0 0 0;
+      padding: 15px 0px 14px 62px;
+      border: 0;
+      float: left;
+  }
+  
+  ul.de-second-navibar {
+      list-style: none;
+  }
+      
+  ul.de-hidden-navibar > li {
+      margin: 0 0 0 0;
+      padding: 15px 0px 14px 62px;
+      border: 0;
+      float: left;
+  }
+  
+  ul.de-hidden-navibar {
+      list-style: none;
+  }
+      
+      
+  ul.de-second-navibar > li > a:hover, a:focus, a:active {
+      color:#E89B17;
+      text-decoration: none;
+  }
+  ul.de-second-navibar > li > a:hover {
+      color:#E89B17;
+      
+  }
+      
+  img.de-img-logo {
+      float: left;
+      margin: 15px 0px 10px 70px;
+  }
+      
+      ul.de-second-navibar>li>a {
+          color:#232427;
+      }
+      
+  input.de-search {
+      height: 41px;
+      width: 229px;
+      border: 1px solid #707070;
+      border-radius: 30px;
+      text-indent: 40px;
+      margin: 5px 0px 0px 20px;
+  }
+      
