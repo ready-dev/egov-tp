@@ -4,7 +4,7 @@ body {
   }
       
   /* 헤더 */    
-  .de-top-manu {
+  .de-top-menu {
       height: 50px;
       width: 100%;
       background: #EFF1F2;
@@ -53,7 +53,7 @@ body {
       border: 0;
       float: left;
   }
-  
+   \
   ul.de-hidden-navibar {
       list-style: none;
   }
