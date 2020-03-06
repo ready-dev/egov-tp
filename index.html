@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>경남테크노파크</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" integrity="sha256-++6EUpJmVNx8V1iT5u+aiOczfZ++FPa4sfEjG+txhOk=" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
     <script src="/js/common.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
 </head>
 <body>
-    <div class="de-top-popup">
-        <img src="https://via.placeholder.com/1903x224.png" /> 
+    <div class="slider">
+        <div><img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" /></div>
+        <div><img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" /></div>
+        <div><img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" /></div>
     </div>
     <div class="de-top-menu">
         <ul class="de-top-navibar">
@@ -24,7 +30,7 @@
             <li>
                 <a href="http://www.jntp.or.kr/en/main.do">사이트맵</a>
             </li>
-             <li>
+            <li>
                 l
             </li>
             <li>
@@ -51,15 +57,14 @@
         </ul>
     </div>
     <div class="de-top-logomenu">
-           <img class="de-img-logo" src="https://via.placeholder.com/311x47.png" />
+        <img class="de-img-logo" src="/img/head/ci.png" />
     </div>
-
     <div class="de-top-navi">
         <ul class="de-second-navibar">
-            <li>
+            <li id="de-menu-1">
                 <a href="http://www.jntp.or.kr/en/main.do"><span>재단소개</span></a>
             </li>
-            <li>
+            <li id="de-menu-2">
                 <a href="http://www.jntp.or.kr/en/main.do"><span>부서안내</span></a>
             </li>
             <li>
@@ -86,218 +91,101 @@
         </ul>
         <input class="de-search" type="text" placeholder="어떤 정보를 원하시나요?" />
     </div>
-    <div class="de-hidden-menu">
+    <div id="hidden-menu" class="de-hidden-menu" style="display: none;">
+    <ul class="de-hidden-navibar">
+            <li>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>인삿말</span></a>      
+            </li>
+            <li>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>연혁</span></a>
+            </li>
+            <li>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>비전</span></a>
+            </li>
+            <li>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>조직도</span></a>
+            </li>
+            <li>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>재단현황</span></a>
+            </li>
+            <li>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>직원안내</span></a>
+            </li>
+            <li>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>CI소개</span></a>
+            </li>
+        </ul>
+    </div>
+    <div id="hidden-menu-1" class="de-hidden-menu" style="display: none;">
         <ul class="de-hidden-navibar">
             <li>
-                <h3><span class="icon-dashboard"></span>재단소개</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>인삿말</span></a>      
             </li>
             <li>
-                <h3><span class="icon-dashboard"></span>부서안내</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>연혁</span></a>
             </li>
             <li>
-                <h3><span class="icon-dashboard"></span>지원사업</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>비전</span></a>
             </li>
             <li>
-                <h3><span class="icon-dashboard"></span>입주지원</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>조직도</span></a>
             </li>
             <li>
-                <h3><span class="icon-dashboard"></span>장비지원</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>재단현황</span></a>
             </li>
             <li>
-                <h3><span class="icon-dashboard"></span>시설관리</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>직원안내</span></a>
             </li>
             <li>
-                <h3><span class="icon-dashboard"></span>알림마당</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3><span class="icon-dashboard"></span>정보공개</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">인삿말</a>      
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">연혁</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">비전</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">조직도</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">재단현황</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">직원안내</a>
-                    </li>
-                    <li>
-                        <a href="http://www.jntp.or.kr/en/main.do">CI소개</a>
-                    </li>
-                </ul>
+                <a href="http://www.jntp.or.kr/en/main.do"><span>CI소개</span></a>
             </li>
         </ul>
     </div>
 
+    <div class="de-main-container">
+        <div class="de-section-1">
+            <p><span class="de-font-1">Global Networking Hub</span></p>
+            <p><span class="de-font-2">경남테크노파크</span></p>
+            <span class="de-font-3">경남의 기술은 곧 세계의 기술 입니다.</span>
+            <div class="de-btn-box">
+                <button class="de-btn-more">자세히 보러가기</button>
+            </div>
+        </div>
+        <div class="de-section-2">
+            <div class="de-sub-1">
+                <div class="de-font-4">지원사업 바로가기</div>
+                <div class="de-search-biz">
+                    <input class="de-input-biz" type="text" placeholder="사업공고명 or 담당자명 입력 후 ENTER" />
+                    
+                </div>
+                <div class="de-btn-box-1">
+                    <button class="de-btn-more-1">자세히 보러가기</button>
+                </div>
+            </div>
+            <div class="de-sub-2">
+                <div class="de-btn-box-2">
+                    <button class="de-btn-color-1">기술개발</button>
+                </div>
+                <div class="de-subject-1">로봇비즈니스벨트조성사업 실증확산지원 대상기업 모집공고(경남,3차)-연장</div>
+                <div class="de-subject-2">공고기간 : 2019.11.21 ~ 2019.12.23</div>
+                <div class="de-btn-box-3">
+                    <button class="de-btn-more-2">+더보기</button>
+                </div>
+                
+            </div>
+            <div class="de-sub-3">
+                
+            </div>
+            <div class="de-sub-4">
+                
+            </div>
+        </div>
+    </div>
+    <div class="scroll-downs">
+        <div class="mousey">
+            <div class="scroller"></div>
+        </div>
+        <div class="scroll-text">scroll</div>
+    </div>
 </body>
 </html>
