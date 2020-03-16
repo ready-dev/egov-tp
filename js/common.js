@@ -2,8 +2,8 @@ $(document).ready(function(){
         var main = $('.slider').bxSlider({ 
         auto: true,	//자동으로 슬라이드 
         controls : false,	//좌우 화살표	
-        autoControls: true,	//stop,play 
-        pager:true,	//페이징 
+        autoControls: false,	//stop,play 
+        pager:false,	//페이징 
         pause: 3000, 
         autoDelay: 0,	
         speed: 500, 
@@ -39,7 +39,31 @@ $(document).ready(function(){
         return false; 
     }); 
     
-      $(".bx-start").hide();	//onload시 시작버튼 숨김. 
+    $(".bx-start").hide();	//onload시 시작버튼 숨김. 
+
+    $("#btn_close").click(function () {
+        setCookieMobile( "todayCookie", "done" , 1);
+        $(".bx-wrapper").hide();
+        $(".slider-off").hide();
+    });
+     
+    function setCookieMobile ( name, value, expiredays ) {
+        var todayDate = new Date();
+        todayDate.setDate( todayDate.getDate() + expiredays );
+        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    }
+    function getCookieMobile () {
+        var cookiedata = document.cookie;
+        if ( cookiedata.indexOf("todayCookier=done") < 0 ){
+             $(".bx-wrapper").show();
+             $(".slider-off").show();
+        }
+        else {
+            $(".bx-wrapper").hide();
+            $(".slider-off").hide();
+        }
+    }
+    getCookieMobile();
 }); 
 
 $(function(){
@@ -59,4 +83,38 @@ $(function(){
     //     $("#hidden-menu-1").hide('10000'); //천천히 사라짐
     // });
 
+    
+
 });
+
+var seemSize = 1,
+     zoomSize = 1,
+     browser = navigator.userAgent.toLowerCase();
+function zoomIn()
+    {
+        seemSize += 0.05;
+        zoomSize *= 1.2;
+        zoom();
+    }
+    function zoomOut()
+    {
+        seemSize -= 0.05;
+        zoomSize /= 1.2;
+        zoom();
+    }
+    function zoom()
+    {
+       if (browser.indexOf("firefox") != -1) { //브라우저가 firefox일때
+        document.body.style.webkitTransform =    'scale('+seemSize+')';  
+        document.body.style.webkitTransformOrigin = '50% 0 0'; //늘리고 줄였을때위치, 
+        document.body.style.msTransform =   'scale('+seemSize+')'; 
+        document.body.style.msTransformOrigin = '50% 0 0';
+        document.body.style.transform = 'scale('+seemSize+')';
+        document.body.style.transformOrigin='50% 0 0';
+        document.body.style.OTransform = 'scale('+seemSize+')';
+        document.body.style.OTransformOrigin='50% 0 0';
+       }else{
+        document.body.style.zoom = zoomSize;
+        }
+    }
+

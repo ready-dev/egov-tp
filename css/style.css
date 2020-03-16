@@ -9,19 +9,15 @@
     font-size: 18px;
     color: #56575b;
 }
-  img.de-img-logo {
-    width:311px;
-    height:47px;
-}
 
 .de-top-navi {
-    height: 95px;
     width: 100%;
     background: #ffffff;
-    padding: 15px 80px 15px 0px;
+    padding: 15px 0px 15px 50px;
     font-size: 18px;
     color: #56575b;
- }
+    height: 80px;
+}
 
 .de-top-popup {
     text-align: center;
@@ -44,6 +40,7 @@ ul.de-second-navibar > li {
     padding: 15px 0px 14px 62px;
     border: 0;
     float: left;
+    font-size:20px;
 }
   
 ul.de-second-navibar {
@@ -83,8 +80,9 @@ ul.de-second-navibar > li > a:hover {
 }
     
 img.de-img-logo {
+    width: 14%;
+    height: auto;
     float: left;
-    margin: 15px 0px 10px 70px;
 }   
     
 ul.de-second-navibar>li>a {
@@ -105,6 +103,19 @@ input.de-search {
 
 ul.de-hidden-navibar > li > a > span {
     color:#ffffff
+}
+
+.slider-off {
+    font-size: 24px;
+    position: absolute;
+    left: 87%;
+    top: 22%;
+    z-index: 1;
+}
+
+.de-banner-checkbox {
+    width: 25px;
+    height: 25px;
 }
 
 /* 헤더 부 슬라이더 */
@@ -142,12 +153,13 @@ img.banner {
 
 /* 메인본문 */
 div.de-main-container {
-    height:820px;
+    height: 820px;
     background-image: url(/img/main/gntp.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: #707070   ;
+    background-color: #707070;
     background-blend-mode: multiply;
+    border-bottom: 10px solid #00B7EC;
 }
 div.de-section-1 {
     height:600px;
@@ -340,6 +352,8 @@ button.de-btn-more-2 {
 
 
 
+
+
 /* 스크롤 애니메이션 */
 
 .scroll-downs {
@@ -349,7 +363,7 @@ button.de-btn-more-2 {
     left: 90%;
     margin: 0 auto;
     width: 34px;
-    height: 55px;
+    height: 30%;
 }
 
 .mousey {

@@ -2,6 +2,9 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="expires" content="-1" >
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>경남테크노파크</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -10,54 +13,44 @@
     <script src="/js/common.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
+    <span class="slider-off"><input id="btn_close" class="de-banner-checkbox" type="checkbox"/><label for="btn_close">오늘하루 열지 않기</label></span>
     <div class="slider"> 
-        <div><img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" /></div>
-        <div><img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" /></div>
-        <div><img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" /></div>
+        <div>
+            <img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" />
+        </div>
+        <div>
+            <img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" />
+        </div>
+        <div>
+            <img class="banner" src="/img/example/zeropay.png" /><img class="banner" src="/img/example/zeropay.png" />
+        </div>
     </div>
     <div class="de-top-menu">
         <ul class="de-top-navibar">
+            <li><a href="http://www.jntp.or.kr/en/main.do">메인이동</a></li>
+            <li>l</li>
+            <li><a href="http://www.jntp.or.kr/en/main.do">사이트맵</a></li> 
+            <li>l</li>
+            <li><a href="http://www.jntp.or.kr/en/main.do">로그인</a></li>
+            <li>l</li>
+            <li><a href="http://www.jntp.or.kr/en/main.do">회원가입</a></li>
+            <li>l</li>
             <li>
-                <a href="http://www.jntp.or.kr/en/main.do">메인이동</a>
+                <span>텍스트크기</span>
+                <a href=javascript:zoomIn()><i class="far fa-plus-square"></i></a>
+                <a href=javascript:zoomOut()><i class="far fa-minus-square"></i></a>
             </li>
-            <li>
-                l
-            </li>
-            <li>
-                <a href="http://www.jntp.or.kr/en/main.do">사이트맵</a>
-            </li>
-            <li>
-                l
-            </li>
-            <li>
-                <a href="http://www.jntp.or.kr/en/main.do">로그인</a>
-            </li>
-            <li>
-                l
-            </li>
-            <li>
-                <a href="http://www.jntp.or.kr/en/main.do">회원가입</a>
-            </li>
-            <li>
-                l
-            </li>
-            <li>
-                <a href="http://www.jntp.or.kr/en/main.do">텍스트크기</a>
-            </li>
-            <li>
-                l
-            </li>
+            <li>l</li>
             <li class="de-top-navibar-eng">
                 <a class="de-top-navibar-eng" href="http://www.jntp.or.kr/en/main.do">ENG</a>
             </li>
         </ul>
     </div>
-    <div class="de-top-logomenu">
-        <img class="de-img-logo" src="/img/head/ci.png" />
-    </div>
     <div class="de-top-navi">
+        <img class="de-img-logo" src="/img/head/ci.png" />
         <ul class="de-second-navibar">
             <li id="de-menu-1">
                 <a href="http://www.jntp.or.kr/en/main.do"><span>재단소개</span></a>
@@ -197,6 +190,42 @@
             <div class="scroller"></div>
         </div>
         <div class="scroll-text">scroll</div>
+    </div>
+    <div class="de-footer">
+        <div class="de-footer-terms">
+            <div class="de-bottom-menu">
+                <ul class="de-bottom-navibar">
+                    <li><a href="http://www.jntp.or.kr/en/main.do">개인정보처리방침</a></li>
+                    <li>l</li>
+                    <li><a href="http://www.jntp.or.kr/en/main.do">영상정보처리기기설치운영관리방침</a></li>
+                    <li>l</li>
+                    <li><a href="http://www.jntp.or.kr/en/main.do">이메일무단수집거부</a></li>
+                    <li>l</li>
+                    <li><a href="http://www.jntp.or.kr/en/main.do">CONTACTUS</a></li>
+                    <li>l</li>
+                    <li><a href="http://www.jntp.or.kr/en/main.do">유관기관 배너목록</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="de-footer-info">
+            <div class="info">
+                <span>경남 창원시 의창구 창원대로 18번길 22 (팔용동)<p>
+                    대표전화 1688-3360   |   팩스 055)262-9669   |   이메일 gntp@gntp.or.kr</p>
+                    <p>Copyright ⓒ 2014 재단법인 경남테크노파크 all rights reserved.</p></span>
+            </div>
+            <div class="links">
+                <div class="links-1">
+                    <select class="sitemap">
+                        <option>전국 TP 사이트</option>
+                    </select>
+                </div>
+                <div class="links-2">
+                    <select class="familysite">
+                        <option>패밀리 사이트</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
