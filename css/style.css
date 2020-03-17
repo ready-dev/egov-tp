@@ -1,4 +1,127 @@
 /* 공통 */    
+
+div {
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .row {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+ }
+ 
+ .column {
+    display: flex;
+ }
+
+ .columns {
+    flex-wrap: wrap;
+ }
+
+ .width-05 {
+    flex: none;
+    width: 5%;
+}
+
+ .width-10 {
+     flex: none;
+     width: 10%;
+ }
+
+ .width-15 {
+    flex: none;
+    width: 15%;
+}
+
+ .width-20 {
+    flex: none;
+    width: 20%;
+}
+
+.width-25 {
+    flex: none;
+    width: 25%;
+}
+
+.width-30 {
+    flex: none;
+    width: 30%;
+}
+
+.width-35 {
+    flex: none;
+    width: 35%;
+}
+
+.width-40 {
+    flex: none;
+    width: 40%;
+}
+
+.width-45 {
+    flex: none;
+    width: 45%;
+}
+
+.width-50 {
+    flex: none;
+    width: 50%;
+}
+
+.width-55 {
+    flex: none;
+    width: 55%;
+}
+
+.width-60 {
+    flex: none;
+    width: 60%;
+}
+
+.width-65 {
+    flex: none;
+    width: 65%;
+}
+
+.width-70 {
+    flex: none;
+    width: 70%;
+}
+
+.width-75 {
+    flex: none;
+    width: 75%;
+}
+
+.width-80 {
+    flex: none;
+    width: 80%;
+}
+
+.width-85 {
+    flex: none;
+    width: 85%;
+}
+
+.width-90 {
+    flex: none;
+    width: 90%;
+}
+
+.width-95 {
+    flex: none;
+    width: 95%;
+}
+
+.width-100 {
+    flex: none;
+    width: 100%;
+}
   
 /* 헤더 */    
 .de-top-menu {
@@ -187,7 +310,7 @@ div.de-section-1 > p {
 .de-btn-box {
     margin-top: 30px;
 }
-.de-btn-more {
+button.de-btn-more {
 	background-color:rgba( 255, 255, 255, 0.3 );
 	border-radius:28px;
 	border:1px solid #ffffff;
@@ -200,7 +323,7 @@ div.de-section-1 > p {
     text-decoration:none;
     
 }
-.de-btn-more:hover {
+button.de-btn-more:hover {
 	background-color:transparent;
 }
 

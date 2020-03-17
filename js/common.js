@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     $("#btn_close").click(function () {
         setCookieMobile( "todayCookie", "done" , 1);
-        $(".bx-wrapper").hide();
+        $(".bx-wrapper").hide('10000');
         $(".slider-off").hide();
     });
      
@@ -59,7 +59,7 @@ $(document).ready(function(){
              $(".slider-off").show();
         }
         else {
-            $(".bx-wrapper").hide();
+            $(".bx-wrapper").hide('10000');
             $(".slider-off").hide();
         }
     }

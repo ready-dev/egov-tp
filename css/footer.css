@@ -1,5 +1,5 @@
 .de-footer {
-    padding: 30px 138px 15px 138px;
+    padding: 2% 8% 3% 8%;
 }
 
 .de-bottom-menu {
@@ -50,3 +50,14 @@ select.sitemap, .familysite {
     margin: 10px 10px 0px 10px;
     color: #7D8088;
 } 
+
+div.de-opinion {
+    height: 155px;
+    text-align: center;
+
+}
+
+div.de-opinion > .footer-img {
+    width: 56px;
+    height: 56px;
+}
