@@ -68,20 +68,24 @@ $(document).ready(function(){
 
 $(function(){
     $("#de-menu-1").mouseover(function(){
-        $("#hidden-menu").show('10000'); //천천히 보이기
+        $("#hidden-menu").show(); //천천히 보이기
 
     });
-    $("#hidden-menu").mouseleave(function(){
-        $("#hidden-menu").hide('10000'); //천천히 사라짐
+    $("#de-menu-1").mouseleave(function(){
+        $("#hidden-menu").hide(); //천천히 사라짐
     });
-
-    // $("#de-menu-2").mouseover(function(){
-    //     $("#hidden-menu-1").show('10000'); //천천히 보이기
-
+    // $("#de-menu-1").mouseleave(function(){
+    //     $("#hidden-menu").hide('5000'); //천천히 사라짐
     // });
-    // $("#hidden-menu-1").mouseleave(function(){
-    //     $("#hidden-menu-1").hide('10000'); //천천히 사라짐
-    // });
+
+
+     $("#de-menu-2").mouseover(function(){
+         $("#hidden-menu-1").show(); //천천히 보이기
+
+     });
+     $("#hidden-menu-1").mouseleave(function(){
+         $("#hidden-menu-1").hide(); //천천히 사라짐
+     });
 
     
 
